@@ -27,7 +27,7 @@
 
     <body>
 
-    <menu name="Links">
+    <menu name="链接">
         <item name="文档首页"         href="index.html"/>
         <item name="常见问题"         href="http://wiki.apache.org/tomcat/FAQ" />
         <item name="用户评论"         href="#comments_section"/>

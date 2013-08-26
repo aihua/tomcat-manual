@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -24,87 +24,70 @@
 
   <properties>
     <author email="remm@apache.org">Remy Maucherat</author>
-    <title>Tomcat Setup</title>
+    <title>Tomcat安装</title>
   </properties>
 
 <body>
 
-<section name="Table of Contents">
+<section name="目录">
 <toc/>
 </section>
 
-  <section name="Introduction">
+  <section name="简介">
     <p>
-      There are several ways to set up Tomcat for running on different
-      platforms. The main documentation for this is a file called
-      <a href="RUNNING.txt">RUNNING.txt</a>. We encourage you to refer to that
-      file if the information below does not answer some of your questions.
+      在不同平台上安装Tomcat有多种方式。为此，主要的文档是
+      <a href="RUNNING.txt">RUNNING.txt</a>。如果以下信息不能回答你的问题，我们鼓励你参考该文件。 
     </p>
   </section>
 
   <section name="Windows">
 
     <p>
-      Installing Tomcat on Windows can be done easily using the Windows
-      installer. Its interface and functionality is similar to other wizard
-      based installers, with only a few items of interest.
+      在Windows上，使用Windows安装程序可以轻易地安装Tomcat。它的界面和功能与其它基于安装程序的向导相似，
+			仅需关注一些信息即可。
     </p>
 
     <p>
       <ul>
-        <li><strong>Installation as a service</strong>: Tomcat will be
-            installed as a Windows service no matter what setting is selected.
-            Using the checkbox on the component page sets the service as "auto"
-            startup, so that Tomcat is automatically started when Windows
-            starts. For optimal security, the service should be run as a
-            separate user, with reduced permissions (see the Windows Services
-            administration tool and its documentation).</li>
-        <li><strong>Java location</strong>: The installer will provide a default
-            JRE to use to run the service. The installer uses the registry to
-            determine the base path of a Java 6 or later JRE, including the JRE
-            installed as part of the full JDK. When running on a 64-bit
-            operating system, the installer will first look for a 64-bit JRE and
-            only look for a 32-bit JRE if a 64-bit JRE is not found. It is not
-            mandatory to use the default JRE detected by the installer. Any
-            installed Java 6 or later JRE (32-bit or 64-bit) may be used.</li>
-        <li><strong>Tray icon</strong>: When Tomcat is run as a service, there
-            will not be any tray icon present when Tomcat is running. Note that
-            when choosing to run Tomcat at the end of installation, the tray
-            icon will be used even if Tomcat was installed as a service.</li>
-        <li>Refer to the
+        <li><strong>安装为系统服务</strong>: 无论选择哪种设置，Tomcat会被作为Windows服务进行安装。
+						勾选组件页中复选框，将服务设置为“自动”启动，Tomcat将随Windows自启动。
+						出于安全考虑，服务应该以独立的用户身份运行，且其权限应被限制(见Windows服务管理工具及其相关文档)。
+            </li>
+        <li><strong>Java位置</strong>: 安装程序将提供缺省的JRE以用作服务的运行。
+				安装程序使用注册表来确定Java 6及以上的JRE的路径，包括作为整个JDK一部分的JRE。
+				在运行64位的操作系统上，安装程序首先将查找64位的JRE，并仅在找不到时才查找32位的JRE。
+				安装程序未必使用侦测到的缺省的JRE。任何已安装的Java 6及以上JRE(32位或者64位)都可被使用。
+            </li>
+        <li><strong>通知栏图标</strong>: 当Tomcat以系统服务方式运行时，在通知栏不会出现图标。
+						注意在安装结尾选择运行Tomcat，通知栏图标将被使用，即使Tomcat被安装作为系统服务。
+            </li>
+        <li>参考
             <a href="windows-service-howto.html">Windows Service HOW-TO</a>
-            for information on how to manage Tomcat as a Windows service.
+            ，获取更多的关于如何管理Tomcat作为系统服务。
             </li>
       </ul>
     </p>
 
-    <p>The installer will create shortcuts allowing starting and configuring
-       Tomcat. It is important to note that the Tomcat administration web
-       application can only be used when Tomcat is running.</p>
+    <p>安装程序将创建快捷方式，以允许启动和配置Tomcat。值得注意的是，
+			Tomcat对web应用的管理仅在Tomcat运行时有效。</p>
 
   </section>
 
-  <section name="Unix daemon">
+  <section name="Unix守护进程">
 
-    <p>Tomcat can be run as a daemon using the jsvc tool from the
-       commons-daemon project. Source tarballs for jsvc are included with the
-       Tomcat binaries, and need to be compiled. Building jsvc requires
-       a C ANSI compiler (such as GCC), GNU Autoconf, and a JDK.</p>
+    <p>通过使用commons-daemon项目中的jsvc工具，Tomcat可以作为守护进程运行。
+       Tomcat程序包中含有jsvc的源代码tar文件，必须经过编译才可使用。
+			 编译jsvc，需要C ANSI编译器(比如GCC)、GNU Autoconf以及JDK。</p>
 
-    <p>Before running the script, the <code>JAVA_HOME</code> environment
-       variable should be set to the base path of the JDK. Alternately, when
-       calling the <code>./configure</code> script, the path of the JDK may
-       be specified using the <code>--with-java</code> parameter, such as
-       <code>./configure --with-java=/usr/java</code>.</p>
+    <p>在运行脚本前，应设置<code>JAVA_HOME</code>环境变量指向JDK的安装目录。
+		   或者，当调用<code>./configure</code>脚本时，通过使用<code>--with-java</code>参数来指定JDK的路径，
+			 比如，<code>./configure --with-java=/usr/java</code>。</p>
 
-    <p>Using the following commands should result in a compiled jsvc binary,
-       located in the <code>$CATALINA_HOME/bin</code> folder. This assumes
-       that GNU TAR is used, and that <code>CATALINA_HOME</code> is an
-       environment variable pointing to the base path of the Tomcat
-       installation.</p>
+    <p>使用以下命令将编译jsvc，并置于<code>$CATALINA_HOME/bin</code>目录中。
+			 这里假定使用GNU TAR，并且<code>CATALINA_HOME</code>用作环境变量指向Tomcat的安装目录。
+       </p>
 
-    <p>Please note that you should use the GNU make (gmake) instead of
-       the native BSD make on FreeBSD systems.</p>
+    <p>请注意你应该使用GNU make (gmake)，而不是FreeBSD系统中本身的BSD make</p>
 
 <source>
     cd $CATALINA_HOME/bin
@@ -116,7 +99,7 @@
     cd ../..
 </source>
 
-    <p>Tomcat can then be run as a daemon using the following commands.</p>
+    <p>使用以下命令，Tomcat将作为守护进程运行。</p>
 
 <source>
     CATALINA_BASE=$CATALINA_HOME
@@ -132,32 +115,28 @@
         org.apache.catalina.startup.Bootstrap
 </source>
 
-    <p>You may also need to specify <code>-jvm server</code> if the JVM defaults
-       to using a server VM rather than a client VM. This has been observed on
-       OSX.</p>
+    <p>如果JVM用作服务器VM而不是客户机VM，你也可指定<code>-jvm server</code>。
+       可在OSX中看到这种用法。</p>
 
-    <p>jsvc has other useful parameters, such as <code>-user</code> which
-       causes it to switch to another user after the daemon initialization is
-       complete. This allows, for example, running Tomcat as a non privileged
-       user while still being able to use privileged ports. Note that if you
-       use this option and start Tomcat as root, you&apos;ll need to disable the
-       <code>org.apache.catalina.security.SecurityListener</code> check that
-       prevents Tomcat starting when running as root.</p>
+    <p>jsvc还有其它有用的参数，比如<code>-user</code>。该参数在守护进程初始化完成后，
+		   将它切换给另一个用户。例如，这将允许运行Tomcat的无权限用户使用受限的端口。
+			 注意如果你使用该选项并以root用户来启动Tomcat，你需要禁用
+       <code>org.apache.catalina.security.SecurityListener</code>检查项，以阻止
+       root用户启动和运行。</p>
 
-    <p><code>jsvc --help</code> will return the full jsvc usage
-       information. In particular, the <code>-debug</code> option is useful
-       to debug issues running jsvc.</p>
+    <p><code>jsvc --help</code>将返回jsvc完整使用信息。特别地，
+       <code>-debug</code>选项对于调试jsvc运行出现的问题非常有用。
+			 </p>
 
-    <p>The file <code>$CATALINA_HOME/bin/daemon.sh</code> can be used as a
-       template for starting Tomcat automatically at boot time from
-       <code>/etc/init.d</code> with jsvc.</p>
 
-    <p>Note that the Commons-Daemon JAR file must be on your runtime classpath
-       to run Tomcat in this manner.  The Commons-Daemon JAR file is in the
-       Class-Path entry of the bootstrap.jar manifest, but if you get a
-       ClassNotFoundException or a NoClassDefFoundError for a Commons-Daemon
-       class, add the Commons-Daemon JAR to the -cp argument when launching
-       jsvc.</p>
+    <p><code>$CATALINA_HOME/bin/daemon.sh</code>文件用作在使用jsvc从
+			 <code>/etc/init.d</code>启动时，自动启动Tomcat的启动模板。
+       </p>
+
+    <p>注意以此种方式运行Tomcat，Commons-Daemon JAR文件必须在你运行时类路径(classpath)中。
+			 Commons-Daemon JAR文件在bootstrap.jar manifest的Class-Path实体中。
+			 如果你在执行jsvc时遇到针对Commons-Daemon的ClassNotFoundException或者NoClassDefFoundError，
+			 请通过-cp参数将Commons-Daemon JAR设置到类路径中。</p>
 
   </section>
 
