@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -23,47 +23,47 @@
   &project;
 
   <properties>
-    <title>Documentation User Comments</title>
+    <title>文档的用户评注</title>
   </properties>
 
 <body>
 
-<section name="Introduction">
+<section name="介绍">
 
-<p>The Tomcat documentation integrates the
-<a href="https://comments.apache.org/help.html">Apache Comments System</a>.
-It allows users to add comments to most documentation pages. The comments
-section can be found at the end of each page.</p>
-
-</section>
-
-<section name="Allowed Content">
-
-<p>Please use the Apache Comments System responsibly. We can only provide
-this service to the community as long as it isn't misused.</p>
-
-<p>The comments are not for general Q&amp;A.
-Comments should be pointed towards suggestions on improving the documentation
-or server. Questions on how to use Apache Tomcat should be directed
-to our <a href="http://tomcat.apache.org/lists.html">mailing lists</a>.</p>
-
-<p>Comments may be removed by moderators if they are either
-implemented or considered invalid/off-topic.</p>
-
-<p>HTML is not allowed in comments, and will just display as raw source code
-if attempted. Links that do not point to an Apache site (*.apache.org) will
-need approval by a moderator before the comment is visible to regular visitors.</p>
+<p>Tomcat文档与
+<a href="https://comments.apache.org/help.html">Apache Comments System</a>
+集成，该系统允许用户对多数文档页面进行评论。评注在各页面的结尾处。
+</p>
 
 </section>
 
-<section name="License">
+<section name="许可的内容">
 
-<p>Any submitted comments must be contributed under the terms of the
-<a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+<p>请负责地使用Apache Comments System。只要不滥用，我们为社区提供此服务。
+</p>
+
+<p>评论不是为了一般的Q&amp;A。
+评论应该围绕提高文档及服务器的建议进行。
+对于如何使用Apache Tomcat的问题，应该去我们的
+<a href="http://tomcat.apache.org/lists.html">邮件列表</a>。</p>
+
+<p>如果评论包含或者被认为包含无效及关闭的话题，可能会被删除。
+</p>
+
+<p>在评论中不允许使用HTML，并且仅显示原生的代码。
+不指向Apache站点(*.apache.org)的链接，在评论前需要从其来源处获取相应的授权许可。
+</p>
 
 </section>
 
-<section name="Verified Users">
+<section name="许可证">
+
+<p>任何提交的评论必须遵守
+<a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>。</p>
+
+</section>
+
+<section name="合规的用户">
 
 <p>Verified users gain the Apache feather next to their name,
 and may post comments with links in them without requiring approval

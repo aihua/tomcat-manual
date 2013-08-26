@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -26,184 +26,166 @@
     <author email="craigmcc@apache.org">Craig R. McClanahan</author>
     <author email="remm@apache.org">Remy Maucherat</author>
     <author email="yoavs@apache.org">Yoav Shapira</author>
-    <title>Documentation Index</title>
+    <title>文档目录</title>
   </properties>
 
 <body>
 
-<section name="Introduction">
+<section name="简介">
 
-<p>This is the top-level entry point of the documentation bundle for the
-<strong>Apache Tomcat</strong> Servlet/JSP container.  Apache Tomcat version 7.0
-implements the Servlet 3.0 and JavaServer Pages 2.2
-<a href="http://wiki.apache.org/tomcat/Specifications">specifications</a> from the
-<a href="http://www.jcp.org">Java Community Process</a>, and includes many
-additional features that make it a useful platform for developing and deploying
-web applications and web services.</p>
+<p>这里是<strong>Apache Tomcat</strong> Servlet/JSP容器系列文档的顶层入口。
+Apache Tomcat version 7.0实现了由<a href="http://www.jcp.org">Java Community Process</a>
+制定的Servlet 3.0和JavaServer Pages 2.2
+<a href="http://wiki.apache.org/tomcat/Specifications">规范</a>,并包含一些额外的特性，
+以使其成为开发和部署web应用和web服务的平台利器。
+</p>
 
-<p>Select one of the links from the navigation menu (to the left) to drill
-down to the more detailed documentation that is available.  Each available
-manual is described in more detail below.</p>
+<p>请从导航菜单(左侧)中选取链接以阅读其详细的文档。每个手册的详细描述如下。
+</p>
 
 </section>
 
 
-<section name="Apache Tomcat User Guide">
+<section name="Apache Tomcat 用户手册">
 
-<p>The following documents will assist you in downloading, installing
-Apache Tomcat 7, and using many of the Apache Tomcat features.</p>
+<p>下面的文档将辅助你下载、安装Apache Tomcat 7，并使用Apache Tomcat的诸多功能。</p>
 
 <ol>
-<li><a href="introduction.html"><strong>Introduction</strong></a> - A
-    brief, high level, overview of Apache Tomcat.</li>
-<li><a href="setup.html"><strong>Setup</strong></a> - How to install and run
-    Apache Tomcat on a variety of platforms.</li>
-<li><a href="appdev/index.html"><strong>First web application</strong></a>
-    - An introduction to the concepts of a <em>web application</em> as defined
-    in the Servlet Specification.  Covers basic organization of your web application
-    source tree, the structure of a web application archive, and an
-    introduction to the web application deployment descriptor
-    (<code>/WEB-INF/web.xml</code>).</li>
-<li><a href="deployer-howto.html"><strong>Deployer</strong></a> -
-    Operating the Apache Tomcat Deployer to deploy, precompile, and validate web
-    applications.</li>
-<li><a href="manager-howto.html"><strong>Manager</strong></a> -
-    Operating the <strong>Manager</strong> web app to deploy, undeploy, and
-    redeploy applications while Apache Tomcat is running.</li>
-<li><a href="realm-howto.html"><strong>Realms and Access Control</strong></a>
-    - Description of how to configure <em>Realms</em> (databases of users,
-    passwords, and their associated roles) for use in web applications that
-    utilize <em>Container Managed Security</em>.</li>
-<li><a href="security-manager-howto.html"><strong>Security Manager</strong></a>
-    - Configuring and using a Java Security Manager to
-    support fine-grained control over the behavior of your web applications.
+<li><a href="introduction.html"><strong>简介</strong></a> - 简洁的、高屋建瓴的Apache Tomcat的介绍。</li>
+<li><a href="setup.html"><strong>安装</strong></a> - 在各种平台上如何安装何运行Apache Tomcat。</li>
+<li><a href="appdev/index.html"><strong>首个web应用</strong></a>
+    - 介绍由Servlet规范定义的<em>web应用</em>的相关概念。涵盖了web应用的源代码树的组织结构，
+		web应用程序包的结构以及web应用部署文件(<code>/WEB-INF/web.xml</code>)的介绍。
     </li>
-<li><a href="jndi-resources-howto.html"><strong>JNDI Resources</strong></a>
-    - Configuring standard and custom resources in the JNDI naming context
-    that is provided to each web application.</li>
+<li><a href="deployer-howto.html"><strong>部署</strong></a> -
+    使用Apache Tomcat部署器(Deployer)来部署、预编译和校验web应用。
+    </li>
+<li><a href="manager-howto.html"><strong>管理</strong></a> -
+    当Apache Tomcat运行时，使用<strong>管理器(Manager)</strong>来部署、卸载和重新部署web应用。
+    </li>
+<li><a href="realm-howto.html"><strong>域及访问控制</strong></a>
+    - 描述为web应用使用<em>容器管理的安全(Container Managed Security)</em>，
+		如何配置<em>域(Realm)</em> (数据库用户、密码及其相关权限等)。
+    </li>
+<li><a href="security-manager-howto.html"><strong>安全管理器(Security Manager)</strong></a>
+    - 配置和使用Java Security Manager,以为web应用提供细粒度的访问控制。
+    </li>
+<li><a href="jndi-resources-howto.html"><strong>JNDI资源</strong></a>
+    - 配置标准的和自定义的JNDI命名上下文，以便为web应用所使用。
+    </li>
 <li><a href="jndi-datasource-examples-howto.html">
-    <strong>JDBC DataSource</strong></a>
-    - Configuring a JNDI DataSoure with a DB connection pool.
-    Examples for many popular databases.</li>
-<li><a href="class-loader-howto.html"><strong>Classloading</strong></a>
-    - Information about class loading in Apache Tomcat, including where to place
-    your application classes so that they are visible.</li>
+    <strong>JDBC数据库源</strong></a>
+    - 配置JNDI DataSoure的数据库连接池。含一些数据库范例。
+    </li>
+<li><a href="class-loader-howto.html"><strong>类加载</strong></a>
+    - 关于Apache Tomcat类加载的信息，包括您的web应用的类放置路径等。
+    </li>
 <li><a href="jasper-howto.html"><strong>JSPs</strong></a>
-    - Information about Jasper configuration, as well as the JSP compiler
-    usage.</li>
+    - 关于Jasper的配置，包括JSP编译器的使用等。
+    </li>
 <li><a href="ssl-howto.html"><strong>SSL</strong></a> -
-    Installing and
-    configuring SSL support so that your Apache Tomcat will serve requests using
-    the <code>https</code> protocol.</li>
+    安装和配置SSL，以使Apache Tomcat支持对<code>https</code>协议的支持。
+		</li>
 <li><a href="ssi-howto.html"><strong>SSI</strong></a> -
-    Using Server Side Includes in Apache Tomcat.</li>
+    在Apache Tomcat中使用SSI(Server Side Includes)。</li>
 <li><a href="cgi-howto.html"><strong>CGI</strong></a> -
-    Using CGIs with Apache Tomcat.</li>
-<li><a href="proxy-howto.html"><strong>Proxy Support</strong></a> -
-    Configuring Apache Tomcat to run behind a proxy server (or a web server
-    functioning as a proxy server).</li>
-<li><a href="mbeans-descriptor-howto.html"><strong>MBean Descriptor</strong></a> -
-    Configuring MBean descriptors files for custom components.</li>
-<li><a href="default-servlet.html"><strong>Default Servlet</strong></a> -
-    Configuring the default servlet and customizing directory listings.</li>
-<li><a href="cluster-howto.html"><strong>Apache Tomcat Clustering</strong></a> -
-    Enable session replication in a Apache Tomcat environment.</li>
-<li><a href="balancer-howto.html"><strong>Balancer</strong></a> -
-    Configuring, using, and extending the load balancer application.</li>
-<li><a href="connectors.html"><strong>Connectors</strong></a> -
-    Connectors available in Apache Tomcat, and native web server integration.</li>
-<li><a href="monitoring.html"><strong>Monitoring and Management</strong></a> -
-    Enabling JMX Remote support, and using tools to monitor and manage Apache Tomcat.</li>
-<li><a href="logging.html"><strong>Logging</strong></a> -
-    Configuring logging in Apache Tomcat.</li>
+    在Apache Tomcat中使用CGI。</li>
+<li><a href="proxy-howto.html"><strong>Proxy的支持</strong></a> -
+    配置在代理服务器层(或者充当代理服务器的web服务器)后面的Apache Tomcat。
+    </li>
+<li><a href="mbeans-descriptor-howto.html"><strong>MBean描述</strong></a> -
+    为自定义组件配置MBean描述。</li>
+<li><a href="default-servlet.html"><strong>默认的Servlet</strong></a> -
+    配置缺省servlet以及自定义用户目录列表。</li>
+<li><a href="cluster-howto.html"><strong>Apache Tomcat集群</strong></a> -
+    在Apache Tomcat 环境里使session复制成为可能。</li>
+<li><a href="balancer-howto.html"><strong>负载均衡</strong></a> -
+    配置、使用及扩展负载均衡应用。</li>
+<li><a href="connectors.html"><strong>连接器</strong></a> -
+    Apache Tomcat中可用连接器及与本地web服务器的集成。</li>
+<li><a href="monitoring.html"><strong>监测和管理</strong></a> -
+    开启JMX Remote支持，并使用工具监测和管理Apache Tomcat。</li>
+<li><a href="logging.html"><strong>日志</strong></a> -
+    配置Apache Tomcat中的日志。</li>
 <li><a href="apr.html"><strong>Apache Portable Runtime</strong></a> -
-    Using APR to provide superior performance, scalability and better
-    integration with native server technologies.</li>
-<li><a href="virtual-hosting-howto.html"><strong>Virtual Hosting</strong></a> -
-    Configuring virtual hosting in Apache Tomcat.</li>
-<li><a href="aio.html"><strong>Advanced IO</strong></a> -
-    Extensions available over regular, blocking IO.</li>
-<li><a href="extras.html"><strong>Additional Components</strong></a> -
-    Obtaining additional, optional components.</li>
-<li><a href="maven-jars.html"><strong>Using Tomcat libraries with Maven</strong></a> -
-    Obtaining Tomcat jars through Maven.</li>
-<li><a href="security-howto.html"><strong>Security Considerations</strong></a> -
-    Options to consider when securing an Apache Tomcat installation.</li>
-<li><a href="windows-service-howto.html"><strong>Windows Service</strong></a> -
-    Running Tomcat as a service on Microsoft Windows.</li>
-<li><a href="windows-auth-howto.html"><strong>Windows Authentication</strong></a> -
-    Configuring Tomcat to use integrated Windows authentication.</li>
-<li><a href="jdbc-pool.html"><strong>High Concurrency JDBC Pool</strong></a> -
-    Configuring Tomcat to use an alternative JDBC pool.</li>
-<li><a href="web-socket-howto.html"><strong>WebSocket support</strong></a> -
-    Developing WebSocket applications for Apache Tomcat.</li>
+    使用APR，以提供高性能、高扩展并更好地与本地服务器技术集成。
+    </li>
+<li><a href="virtual-hosting-howto.html"><strong>虚拟主机</strong></a> -
+    配置Apache Tomcat的虚拟主机。</li>
+<li><a href="aio.html"><strong>高级IO</strong></a> -
+    对通用、拥塞式IO提供可用性扩展。</li>
+<li><a href="extras.html"><strong>其它组件</strong></a> -
+    使用额外的、可选组件。</li>
+<li><a href="maven-jars.html"><strong>通过Maven使用Tomcat库</strong></a> -
+    通过Maven获取Tomcat库文件。</li>
+<li><a href="security-howto.html"><strong>安全因素</strong></a> -
+    Apache Tomcat安装中要考虑的安全选项。</li>
+<li><a href="windows-service-howto.html"><strong>Windows服务</strong></a> -
+    在Microsoft Windows中Tomcat作为服务使用。</li>
+<li><a href="windows-auth-howto.html"><strong>Windows鉴权</strong></a> -
+    配置Tomcat与Windows鉴权集成使用。</li>
+<li><a href="jdbc-pool.html"><strong>高并发的JDBC池</strong></a> -
+    配置Tomcat以使用其它的JDBC池。</li>
+<li><a href="web-socket-howto.html"><strong>WebSocket支持</strong></a> -
+    为Apache Tomcat开发WebSocket应用。</li>
 
 </ol>
 
 </section>
 
 
-<section name="Reference">
+<section name="参考">
 
-<p>The following documents are aimed at <em>System Administrators</em> who
-are responsible for installing, configuring, and operating an Apache Tomcat server.
+<p>以下文档读者对象为<em>系统管理员</em>,其负责安装、配置和操作Apache Tomcat服务器。
 </p>
 <ul>
-<li><a href="RELEASE-NOTES.txt"><strong>Release notes</strong></a>
-    - Known issues in this Apache Tomcat release.
+<li><a href="RELEASE-NOTES.txt"><strong>发行说明</strong></a>
+    - Apache Tomcat发行时还存在的已知的问题等。
     </li>
-<li><a href="config/index.html"><strong>Apache Tomcat Server Configuration Reference</strong></a>
-    - Reference manual that documents all available elements and attributes
-      that may be placed into the Apache Tomcat <code>conf/server.xml</code> file.
+<li><a href="config/index.html"><strong>Apache Tomcat服务器配置参考手册</strong></a>
+    - 参考手册，该文档描述了放置于 Apache Tomcat <code>conf/server.xml</code>文件中所有元素及属性的信息。
     </li>
-<li><a href="http://tomcat.apache.org/connectors-doc/index.html"><strong>JK Documentation</strong></a>
-    - Complete documentation and HOWTOs on the JK native webserver connector,
-      used to interface Apache Tomcat with servers like Apache HTTPd, IIS
-      and others.</li>
+<li><a href="http://tomcat.apache.org/connectors-doc/index.html"><strong>JK文档</strong></a>
+    - 关于如何使用JK本地服务连接器的完整文档，以便Apache Tomcat与Apache HTTPd、IIS及其它服务器集成。</li>
 <li>Servlet 3.0
     <a href="http://jcp.org/aboutJava/communityprocess/final/jsr315/index.html">
-    <strong>Specification</strong></a> and
+    <strong>规范</strong></a> 及 
     <a href="http://docs.oracle.com/javaee/6/api/index.html?javax/servlet/package-summary.html">
-    <strong>Javadoc</strong></a>
+    <strong>Java接口说明</strong></a>
     </li>
 <li><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr245/index.html">
-    <strong>JSP 2.2 and EL 2.2 Specifications</strong></a>,
+    <strong>JSP 2.2及EL 2.2规范</strong></a>,
     <a href="http://docs.oracle.com/javaee/6/api/index.html?javax/servlet/jsp/package-summary.html">
-    <strong>JSP 2.2 Javadoc (note it is labelled as JSP 2.1)</strong></a>,
+    <strong>JSP 2.2 Java接口说明 (注意其标记作JSP 2.1)</strong></a>,
     <a href="http://docs.oracle.com/javaee/6/api/index.html?javax/el/package-summary.html">
-    <strong>EL 2.2 Javadoc</strong></a>
+    <strong>EL 2.2 Java接口说明</strong></a>
     </li>
 </ul>
 
 </section>
 
 
-<section name="Apache Tomcat Developers">
+<section name="Apache Tomcat 开发人员">
 
-<p>The following documents are for Java developers who wish to contribute to
-the development of the <em>Apache Tomcat</em> project.</p>
+<p>以下文档的读者对象为Java开发人员，其希望为开发<em>Apache Tomcat</em>项目作出贡献。</p>
 <ul>
-<li><a href="building.html"><strong>Building from Source</strong></a> -
-    Details the steps necessary to download Apache Tomcat source code (and the
-    other packages that it depends on), and build a binary distribution from
-    those sources.
+<li><a href="building.html"><strong>从源代码构建</strong></a> -
+    下载Apache Tomcat源代码(及其依赖包)以及从源代码构建二进制程序所需的详细步骤。
     </li>
-<li><a href="changelog.html"><strong>Changelog</strong></a> - Details the
-    changes made to Apache Tomcat.
+<li><a href="changelog.html"><strong>修订日志</strong></a> - Apache Tomcat详细的修订记录。
     </li>
-<li><a href="http://wiki.apache.org/tomcat/TomcatVersions"><strong>Status</strong></a> -
-    Apache Tomcat development status.
+<li><a href="http://wiki.apache.org/tomcat/TomcatVersions"><strong>状态</strong></a> -
+    Apache Tomcat开发状态。
     </li>
-<li><a href="developers.html"><strong>Developers</strong></a> - List of active
-    Apache Tomcat contributors.
+<li><a href="developers.html"><strong>开发人员</strong></a> - Apache Tomcat贡献者。
     </li>
-<li><a href="funcspecs/index.html"><strong>Functional Specifications</strong></a>
-    - Requirements specifications for features of the <em>Catalina</em> servlet
-    container portion of Apache Tomcat.</li>
-<li><a href="api/index.html"><strong>Javadocs</strong></a>
-    - Javadoc API documentation for Apache Tomcat's internals.</li>
-<li><a href="architecture/index.html"><strong>Apache Tomcat Architecture</strong></a>
-    - Documentation of the Apache Tomcat Server Architecture.</li>
+<li><a href="funcspecs/index.html"><strong>功能说明书</strong></a>
+    - Apache Tomcat中<em>Catalina</em> servlet容器功能的需求规格说明书。
+    </li>
+<li><a href="api/index.html"><strong>Java接口说明</strong></a>
+    - Apache Tomcat内部的Java接口说明。</li>
+<li><a href="architecture/index.html"><strong>Apache Tomcatr架构</strong></a>
+    - Apache Tomcat服务器的架构文档。</li>
 </ul>
 
 </section>

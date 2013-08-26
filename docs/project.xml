@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -15,7 +15,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<project name="Apache Tomcat Documentation"
+<project name="Apache Tomcat 文档"
         href="http://tomcat.apache.org/">
 
     <title>Apache Tomcat 7</title>
@@ -28,73 +28,73 @@
     <body>
 
     <menu name="Links">
-        <item name="Docs Home"             href="index.html"/>
-        <item name="FAQ"                   href="http://wiki.apache.org/tomcat/FAQ" />
-        <item name="User Comments"         href="#comments_section"/>
+        <item name="文档首页"         href="index.html"/>
+        <item name="常见问题"         href="http://wiki.apache.org/tomcat/FAQ" />
+        <item name="用户评论"         href="#comments_section"/>
     </menu>
 
-    <menu name="User Guide">
-        <item name="1) Introduction"        href="introduction.html"/>
-        <item name="2) Setup"               href="setup.html"/>
-        <item name="3) First webapp"        href="appdev/index.html"/>
-        <item name="4) Deployer"            href="deployer-howto.html"/>
-        <item name="5) Manager"             href="manager-howto.html"/>
-        <item name="6) Realms and AAA"      href="realm-howto.html"/>
-        <item name="7) Security Manager"
+    <menu name="用户手册">
+        <item name="1) 简介"        href="introduction.html"/>
+        <item name="2) 安装"               href="setup.html"/>
+        <item name="3) 首个web应用"        href="appdev/index.html"/>
+        <item name="4) 部署"            href="deployer-howto.html"/>
+        <item name="5) 管理"             href="manager-howto.html"/>
+        <item name="6) 域及访问控制"      href="realm-howto.html"/>
+        <item name="7) 安全管理"
               href="security-manager-howto.html"/>
-        <item name="8) JNDI Resources"      href="jndi-resources-howto.html"/>
-        <item name="9) JDBC DataSources"
+        <item name="8) JNDI资源"      href="jndi-resources-howto.html"/>
+        <item name="9) JDBC数据库资源"
               href="jndi-datasource-examples-howto.html"/>
-        <item name="10) Classloading"       href="class-loader-howto.html"/>
-        <item name="11) JSPs"               href="jasper-howto.html"/>
+        <item name="10) 类加载"       href="class-loader-howto.html"/>
+        <item name="11) JSP"               href="jasper-howto.html"/>
         <item name="12) SSL"                href="ssl-howto.html"/>
         <item name="13) SSI"                href="ssi-howto.html"/>
         <item name="14) CGI"                href="cgi-howto.html"/>
-        <item name="15) Proxy Support"      href="proxy-howto.html"/>
-        <item name="16) MBean Descriptor"
+        <item name="15) Proxy支持"      href="proxy-howto.html"/>
+        <item name="16) MBean描述文件"
               href="mbeans-descriptor-howto.html"/>
-        <item name="17) Default Servlet"    href="default-servlet.html"/>
-        <item name="18) Clustering"         href="cluster-howto.html"/>
-        <item name="19) Load Balancer"      href="balancer-howto.html"/>
-        <item name="20) Connectors"         href="connectors.html"/>
-        <item name="21) Monitoring and Management"
+        <item name="17) 默认的Servlet"    href="default-servlet.html"/>
+        <item name="18) 集群"         href="cluster-howto.html"/>
+        <item name="19) 负载均衡"      href="balancer-howto.html"/>
+        <item name="20) 连接器"         href="connectors.html"/>
+        <item name="21) 监测和管理"
               href="monitoring.html"/>
-        <item name="22) Logging"            href="logging.html"/>
-        <item name="23) APR/Native"         href="apr.html"/>
-        <item name="24) Virtual Hosting"    href="virtual-hosting-howto.html"/>
-        <item name="25) Advanced IO"        href="aio.html"/>
-        <item name="26) Additional Components"
+        <item name="22) 日志"            href="logging.html"/>
+        <item name="23) APR/本地服务"         href="apr.html"/>
+        <item name="24) 虚拟主机"    href="virtual-hosting-howto.html"/>
+        <item name="25) 高级的IO"        href="aio.html"/>
+        <item name="26) 其它组件"
               href="extras.html"/>
-        <item name="27) Mavenized"          href="maven-jars.html"/>
-        <item name="28) Security Considerations"
+        <item name="27) Maven集成"          href="maven-jars.html"/>
+        <item name="28) 安全因素"
               href="security-howto.html"/>
-        <item name="29) Windows Service"    href="windows-service-howto.html"/>
-        <item name="30) Windows Authentication"
+        <item name="29) Windows服务"    href="windows-service-howto.html"/>
+        <item name="30) Windows鉴权"
               href="windows-auth-howto.html"/>
-        <item name="31) Tomcat's JDBC Pool"
+        <item name="31) Tomcat的JDBC池"
               href="jdbc-pool.html"/>
         <item name="32) WebSocket"          href="web-socket-howto.html"/>
     </menu>
 
-    <menu name="Reference">
-        <item name="Release Notes"         href="RELEASE-NOTES.txt"/>
-        <item name="Configuration"         href="config/index.html"/>
-        <item name="Tomcat Javadocs"       href="api/index.html"/>
-        <item name="Servlet Javadocs"      href="servletapi/index.html"/>
-        <item name="JSP 2.2 Javadocs"      href="jspapi/index.html"/>
-        <item name="EL 2.2 Javadocs"       href="elapi/index.html"/>
-        <item name="JK 1.2 Documentation"
+    <menu name="参考">
+        <item name="发行说明"         href="RELEASE-NOTES.txt"/>
+        <item name="配置"         href="config/index.html"/>
+        <item name="Tomcat Java接口说明"       href="api/index.html"/>
+        <item name="Servlet Java接口说明"      href="servletapi/index.html"/>
+        <item name="JSP 2.2 Java接口说明"      href="jspapi/index.html"/>
+        <item name="EL 2.2 Java接口说明"       href="elapi/index.html"/>
+        <item name="JK 1.2 文档"
               href="http://tomcat.apache.org/connectors-doc/"/>
     </menu>
 
-    <menu name="Apache Tomcat Development">
-        <item name="Building"              href="building.html"/>
-        <item name="Changelog"             href="changelog.html"/>
-        <item name="Status"                href="http://wiki.apache.org/tomcat/TomcatVersions"/>
-        <item name="Developers"            href="developers.html"/>
-        <item name="Architecture"          href="architecture/index.html" />
-        <item name="Functional Specs."     href="funcspecs/index.html"/>
-        <item name="Tribes"                href="tribes/introduction.html"/>
+    <menu name="Apache Tomcat开发">
+        <item name="编译构建"              href="building.html"/>
+        <item name="修订记录"             href="changelog.html"/>
+        <item name="状态"                href="http://wiki.apache.org/tomcat/TomcatVersions"/>
+        <item name="开发人员"            href="developers.html"/>
+        <item name="体系架构"          href="architecture/index.html" />
+        <item name="功能说明书"     href="funcspecs/index.html"/>
+        <item name="家族"                href="tribes/introduction.html"/>
     </menu>
 
     </body>
