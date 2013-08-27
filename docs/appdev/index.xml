@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -24,16 +24,15 @@
 
   <properties>
     <author email="craigmcc@apache.org">Craig R. McClanahan</author>
-    <title>Table of Contents</title>
+    <title>目录</title>
   </properties>
 
 <body>
 
 
-<section name="Preface">
+<section name="前言">
 
-<p>This manual includes contributions from many members of the Tomcat Project
-developer community.  The following authors have provided significant content:
+<p>Tomcat项目开发者社区的许多成员为本文档付出了大量的心血。以下所列人员为此提供了重要的内容：
 </p>
 <ul>
 <li>Craig R. McClanahan
@@ -43,33 +42,30 @@ developer community.  The following authors have provided significant content:
 </section>
 
 
-<section name="Table of Contents">
+<section name="目录">
 
-<p>The information presented is divided into the following sections:</p>
+<p>本文档主要分为以下几章：</p>
 <ul>
-<li><a href="introduction.html"><strong>Introduction</strong></a> -
-    Briefly describes the information covered here, with
-    links and references to other sources of information.</li>
-<li><a href="installation.html"><strong>Installation</strong></a> -
-    Covers acquiring and installing the required software
-    components to use Tomcat for web application development.</li>
-<li><a href="deployment.html"><strong>Deployment Organization</strong></a> -
-    Discusses the standard directory layout for a web application
-    (defined in the Servlet API Specification), the Web Application
-    Deployment Descriptor, and options for integration with Tomcat
-    in your development environment.</li>
-<li><a href="source.html"><strong>Source Organization</strong></a> -
-    Describes a useful approach to organizing the source code
-    directories for your project, and introduces the
-    <code>build.xml</code> used by Ant to manage compilation.</li>
-<li><a href="processes.html"><strong>Development Processes</strong></a> -
-    Provides brief descriptions of typical development processes
-    utilizing the recommended deployment and source organizations.</li>
-<li><a href="sample/" target="_new"><strong>Example Application</strong></a> -
-    This directory contains a very simple, but functionally complete,
-    "Hello, World" application built according to the principles
-    described in this manual.  You can use this application to
-    practice using the described techniques.</li>
+<li><a href="introduction.html"><strong>简介</strong></a> -
+    简要地描述了本文档涵盖的信息以及一些链接和其它参考资料。
+    </li>
+<li><a href="installation.html"><strong>安装</strong></a> -
+    涵盖使用Tomcat进行web应用开发时，要获取及要安装的软件。
+    </li>
+<li><a href="deployment.html"><strong>部署结构</strong></a> -
+    讨论web应用的标准目录结构(由Servlet API规范规定的)，
+		web应用部署描述文件以及将Tomcat与你的开发环境集成。
+    </li>
+<li><a href="source.html"><strong>源代码的组织</strong></a> -
+    描述了你的项目源代码目录结构最佳方式，并介绍了使用Ant
+    <code>build.xml</code>进行编译。</li>
+<li><a href="processes.html"><strong>开发过程</strong></a> -
+    简要描述了使用推荐的部署和源代码组织结构进行典型的开发过程。
+    </li>
+<li><a href="sample/" target="_new"><strong>示例程序</strong></a> -
+    该目录包含一个非常简单，但功能俱全的，“Hello, World”应用，
+		该应用根据本手册的原则构建。你可以使用该应用对提及的技术进行实践。
+    </li>
 </ul>
 
 </section>

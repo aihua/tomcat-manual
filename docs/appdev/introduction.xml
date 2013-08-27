@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -30,59 +30,43 @@
 <body>
 
 
-<section name="Overview">
+<section name="概述">
 
-<p>Congratulations!  You've decided to (or been told to) learn how to
-build web applications using servlets and JSP pages, and picked the
-Tomcat server to use for your learning and development.  But now what
-do you do?</p>
+<p>恭喜！你决定(或者被要求)学习如何使用servlet和JSP构建web应用，
+并且选择Tomcat服务器进行学习和开发。但该如何入手？
+</p>
 
-<p>This manual is a primer covering the basic steps of using Tomcat to
-set up a development environment, organize your source code, and then
-build and test your application.  It does not discuss architectures or
-recommended coding practices for web application development,
-or provide in depth instructions on operating the development
-tools that are discussed.  References to sources of additional information
-are included in the following subsections.</p>
+<p>本手册主要涵盖使用Tomcat建立开发环境的基本步骤、源代码的组织以及编译测试你的应用。
+而不讨论web应用开发中采用的架构或者推荐代码实践，以及由此涉及的对开发工具使用的深入指导。
+以下各小节还含有了参考资料。</p>
 
-<p>The discussion in this manual is aimed at developers who will be using
-a text editor along with command line tools to develop and debug their
-applications.  As such, the recommendations are fairly generic -- but you
-should easily be able to apply them in either a Windows-based or Unix-based
-development environment.  If you are utilizing an Integrated Development
-Environment (IDE) tool, you will need to adapt the advice given here to
-the details of your particular environment.</p>
+<p>本手册讨论的目标读者是开发人员，他们使用文本编辑器及命令行工具进行开发和调试他们的应用。
+比如，你应该便捷地使用基于Windows或者Unix的开发环境。如果你使用集成开发环境(IDE)，你需要
+仔细按照你的特殊开发环境的描述进行。
+</p>
 
 </section>
 
 
-<section name="Links">
+<section name="链接">
 
-<p>The following links provide access to selected sources of online
-information, documentation, and software that is useful in developing
-web applications with Tomcat.</p>
+<p>通过以下链接，可以对精选的在线信息、文档进行访问，
+而且一些软件在使用Tomcat进行web应用开发过程中非常有用。
+</p>
 <ul>
 <li><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr245/index.html">http://jcp.org/aboutJava/communityprocess/mrel/jsr245/</a> -
-    <i>JavaServer Pages (JSP) Specification, Version 2.2</i>.  Describes
-    the programming environment provided by standard implementations
-    of the JavaServer Pages (JSP) technology.  In conjunction with
-    the Servlet API Specification (see below), this document describes
-    what a portable API page is allowed to contain.  Specific
-    information on scripting (Chapter 9), tag extensions (Chapter 7),
-    and packaging JSP pages (Appendix A) is useful.  The Javadoc
-    API Documentation is included in the specification, and with the
-    Tomcat download.<br/><br/></li>
+    <i>JavaServer Pages (JSP) 规范, Version 2.2</i>。描述了
+		由JavaServer Pages (JSP)技术标准实现提供的开发环境，
+		并与Servlet API规范(如下所示)相结合，该文档描述了应含有的接口。
+    关于脚本的特殊信息(第9章)、标签扩展(第7章)以及打包JSP页面(附录A)都非常有用。
+		此外，规范中的Java开发接口文档可和Tomcat一同下载。
+    <br/><br/></li>
 <li><a href="http://jcp.org/aboutJava/communityprocess/mrel/jsr315/index.html">http://jcp.org/aboutJava/communityprocess/mrel/jsr315/</a> -
-    <i>Servlet API Specification, Version 3.0</i>.  Describes the
-    programming environment that must be provided by all servlet
-    containers conforming to this specification.  In particular, you
-    will need this document to understand the web application
-    directory structure and deployment file (Chapter 10), methods of
-    mapping request URIs to servlets (Chapter 12), container managed
-    security (Chapter 13), and the syntax of the <code>web.xml</code>
-    Web Application Deployment Descriptor (Chapter 14).  The Javadoc
-    API Documentation is included in the specification, and with the
-    Tomcat download.<br/><br/></li>
+    <i>Servlet API规范, Version 3.0</i>。描述了所有servlet容器为符合该规范必须提供的程序环境。
+		特别地，你需要理解web应用的目录结构和部署文件(第10章)，请求URI的映射到servlet的方法(第12章)，
+		容器管理的安全(第13章)，以及<code>web.xml</code>部署文件的语法(第14章)。
+		此规范定义的Java开发接口文档可和Tomcat一同下载。
+    <br/><br/></li>
 </ul>
 
 </section>

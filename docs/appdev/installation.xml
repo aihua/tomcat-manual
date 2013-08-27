@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -31,69 +31,55 @@
 <body>
 
 
-<section name="Installation">
+<section name="安装">
 
-<p>In order to use Tomcat for developing web applications, you must first
-install it (and the software it depends on).  The required steps are outlined
-in the following subsections.</p>
+<p>为了使用Tomcat进行web应用的开发，首先你必须安装它(及其所依赖的软件)。
+以下各节简要的描述了所需的步骤。</p>
 
 <subsection name="JDK">
 
-<p>Tomcat 7.0 was designed to run on Java SE 6.
+<p>Tomcat 7.0设计运行在Java SE 6之上。
 </p>
 
-<p>Compatible JDKs for many platforms (or links to where they can be found)
-are available at
-<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>.</p>
+<p>许多平台兼容的JDK可从(或者从该处找到链接)
+<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>取得。</p>
 
 </subsection>
 
 <subsection name="Tomcat">
 
-<p>Binary downloads of the <strong>Tomcat</strong> server are available from
-<a href="http://tomcat.apache.org/">http://tomcat.apache.org/</a>.
-This manual assumes you are using the most recent release
-of Tomcat 7.  Detailed instructions for downloading and installing
-Tomcat are available <a href="../setup.html">here</a>.</p>
+<p>从<a href="http://tomcat.apache.org/">http://tomcat.apache.org/</a>下载二进制的<strong>Tomcat</strong>服务器。
+本手册假定你使用的是Tomcat 7最新的发行版。下载及安装的指导详见
+<a href="../setup.html">这里</a>。</p>
 
-<p>In the remainder of this manual, example shell scripts assume that you have
-set an environment variable <code>CATALINA_HOME</code> that contains the
-pathname to the directory in which Tomcat has been installed. Optionally, if
-Tomcat has been configured for multiple instances, each instance will have its
-own <code>CATALINA_BASE</code> configured.</p>
+<p>本手册剩余的部分，示例脚本假定你已经设置<code>CATALINA_HOME</code>环境变量，
+它含有Tomcat安装的路径名。或者，如果Tomcat被配置为多实例，每个实例需要配置各自的
+<code>CATALINA_BASE</code>。</p>
 
 </subsection>
 
 
 <subsection name="Ant">
 
-<p>Binary downloads of the <strong>Ant</strong> build tool are available from
-<a href="http://ant.apache.org/">http://ant.apache.org/</a>.
-This manual assumes you are using Ant 1.8 or later.  The instructions may
-also be compatible with other versions, but this has not been tested.</p>
+<p>从<a href="http://ant.apache.org/">http://ant.apache.org/</a>下载<strong>Ant</strong>编译工具。
+本手册假定你使用Ant 1.8以上版本。指令可能也兼容其它版本，但是未能对此进行测试。
+</p>
 
-<p>Download and install Ant.
-Then, add the <code>bin</code> directory of the Ant distribution to your
-<code>PATH</code> environment variable, following the standard practices for
-your operating system platform.  Once you have done this, you will be able to
-execute the <code>ant</code> shell command directly.</p>
+<p>下载和安装Ant。接着，将Ant的<code>bin</code>目录添加到你的<code>PATH</code>环境变量中，
+参照你的操作系统标准的设置实践。此后，你可以直接执行<code>ant</code>命令。</p>
 
 </subsection>
 
 
 <subsection name="CVS">
 
-<p>Besides the required tools described above, you are strongly encouraged
-to download and install a <em>source code control</em> system, such as the
-<strong>Concurrent Version System</strong> (CVS), to maintain historical
-versions of the source files that make up your web application.  Besides
-the server, you will also need appropriate client
-tools to check out source code files, and check in modified versions.</p>
+<p>除了上述所需的工具，强烈推荐你下载和安装<em>源代码控制</em>系统，
+比如<strong>Concurrent Version System</strong> (CVS)，来维护你的web应用源文件的版本历史。
+除服务器外，你还需要合适的客户端工具检出源代码文件、检入修改后的版本。</p>
 
-<p>Detailed instructions for installing and using source code control
-applications is beyond the scope of this manual.  However, CVS server and
-client tools for many platforms (along with documentation) can be downloaded
-from <a href="http://www.cvshome.org/">http://www.cvshome.org/</a>.</p>
+<p>安装和使用源代码控制程序详细指导超出了本手册的范畴。
+然而，CVS服务器和客户端工具(及文档)可从
+<a href="http://www.cvshome.org/">http://www.cvshome.org/</a>下载。</p>
 
 </subsection>
 

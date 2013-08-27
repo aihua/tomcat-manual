@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -18,7 +18,7 @@
 <project name="Application Developer's Guide"
         href="http://tomcat.apache.org/">
 
-    <title>Application Developer's Guide</title>
+    <title>开发人员指南</title>
 
     <logo href="/images/tomcat.gif">
       The Apache Tomcat Servlet/JSP Container
@@ -27,21 +27,21 @@
 
     <body>
 
-    <menu name="Links">
-        <item name="Docs Home"             href="../index.html"/>
-        <item name="App Dev Guide Home"    href="index.html"/>
-        <item name="FAQ"                   href="http://wiki.apache.org/tomcat/FAQ" />
-        <item name="User Comments"         href="#comments_section"/>
+    <menu name="链接">
+        <item name="文档首页"             href="../index.html"/>
+        <item name="开发人员指南首页"    href="index.html"/>
+        <item name="常见问题"                   href="http://wiki.apache.org/tomcat/FAQ" />
+        <item name="用户评论"         href="#comments_section"/>
     </menu>
 
-    <menu name="Contents">
-        <item name="Contents"              href="index.html"/>
-        <item name="Introduction"          href="introduction.html"/>
-        <item name="Installation"          href="installation.html"/>
-        <item name="Deployment"            href="deployment.html"/>
-        <item name="Source Code"           href="source.html"/>
-        <item name="Processes"             href="processes.html"/>
-        <item name="Example App"           href="sample/"/>
+    <menu name="目录">
+        <item name="目录"              href="index.html"/>
+        <item name="简介"          href="introduction.html"/>
+        <item name="安装"          href="installation.html"/>
+        <item name="部署"            href="deployment.html"/>
+        <item name="源代码"           href="source.html"/>
+        <item name="步骤"             href="processes.html"/>
+        <item name="程序示例"           href="sample/"/>
     </menu>
 
     </body>
